@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.4.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Sphinx extension to enable documenting PHP code
 
 License:        BSD
@@ -72,5 +72,8 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/sphinxcontrib_phpdomain-%{version}-py?.?.egg-info
 
 %changelog
+* Mon Jul 02 2018 Miro Hrončok <mhroncok@redhat.com> - 0.4.1-2
+- Rebuilt for Python 3.7
+
 * Tue Jun 26 2018 Christian Glombek <lorbus@fedoraproject.org> - 0.4.1-1
 - Initial package.

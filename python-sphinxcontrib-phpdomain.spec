@@ -22,7 +22,7 @@ PHP domain for sphinx
 Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
-Requires:      (python3dist(sphinx) >= 1.3 with python3dist(sphinx) < 2.0)
+Requires:      (python3dist(sphinx) >= 1.3 with python3dist(sphinx) < 2)
 
 %description -n python3-%{pypi_name}
 This package contains the phpdomain Sphinx extension.This extension provides a

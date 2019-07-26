@@ -3,7 +3,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.4.1
-Release:        5%{?dist}
+Release:        6%{?dist}
 Summary:        Sphinx extension to enable documenting PHP code
 
 License:        BSD
@@ -48,6 +48,9 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/sphinxcontrib_phpdomain-%{version}-py?.?.egg-info
 
 %changelog
+* Fri Jul 26 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.4.1-6
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild
+
 * Sat Feb 02 2019 Fedora Release Engineering <releng@fedoraproject.org> - 0.4.1-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild
 

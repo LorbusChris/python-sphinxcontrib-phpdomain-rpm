@@ -2,8 +2,8 @@
 %global pypi_name sphinxcontrib-phpdomain
 
 Name:           python-%{pypi_name}
-Version:        0.6.1
-Release:        3%{?dist}
+Version:        0.6.3
+Release:        1%{?dist}
 Summary:        Sphinx extension to enable documenting PHP code
 
 License:        BSD
@@ -22,7 +22,7 @@ PHP domain for sphinx
 Summary:        %{summary}
 %{?python_provide:%python_provide python3-%{pypi_name}}
 
-Requires:      (python3dist(sphinx) >= 1.3 with python3dist(sphinx) < 2.2)
+Requires:      (python3dist(sphinx) >= 1.3 with python3dist(sphinx) < 2.3)
 
 %description -n python3-%{pypi_name}
 This package contains the phpdomain Sphinx extension.This extension provides a
@@ -48,6 +48,9 @@ rm -rf %{pypi_name}.egg-info
 %{python3_sitelib}/sphinxcontrib_phpdomain-%{version}-py?.?.egg-info
 
 %changelog
+* Tue Dec 24 2019 Christian Glombek <lorbus@fedoraproject.org> - 0.6.3-1
+- Update to v0.6.3
+
 * Thu Oct 03 2019 Miro Hrončok <mhroncok@redhat.com> - 0.6.1-3
 - Rebuilt for Python 3.8.0rc1 (#1748018)
 
